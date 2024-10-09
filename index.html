@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 2</title>
+
+    <link rel="stylesheet" href="/css/reset.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            max-width: 1230px;
+            width: 100%;
+            padding: 30px 15px;
+            margin: 0 auto;
+        }
+
+        section:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        .content>*:first-child {
+            margin-top: 0;
+        }
+
+        .content>*:last-child {
+            margin-bottom: 0;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        #heading-1 {
+            font-size: 32px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .arbitrary__image {
+            display: block;
+            float: left;
+            padding: 0 10px 10px 0;
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 549.98px) {
+            .arbitrary__image {
+                float: none;
+                padding: 0 0 10px 0;
+                max-width: 100%;
+            }
+        }
+
+        .checkboxes__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .checkboxes__input {
+            display: none;
+        }
+
+        .checkboxes__label {
+            flex: 1 1 calc(12% - 10px);
+            min-width: 100px;
+            margin: 5px;
+            min-height: 100px;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            background: #ffcc00;
+            transition: background-color 0.2s ease;
+        }
+
+        .checkboxes__input:checked+.checkboxes__label {
+            background: #33cc33;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1 id="heading-1">Лабораторна робота 2</h1>
+        <section class="arbitrary">
+            <div style="position: fixed;width: auto;height: auto;top: 0;left: 0;background: #000;color: #fff;padding: 5px;" class="arbitrary__caption">ЗВЕРХУ</div>
+            <div class="arbitrary__floating">
+                <img class="arbitrary__image" src="https://img2.akspic.ru/previews/7/7/7/8/7/178777/178777-amoled-atmosfera-ekoregion-priroda-poslesvechenie-550x310.jpg" alt="atmosfera ekoregion priroda" width="550" height="310">
+                <div class="arbitrary__text content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti, illum ea architecto nostrum beatae quod inventore laudantium nulla unde odio accusantium itaque eligendi aperiam quas dolor eaque nemo porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, adipisci recusandae accusamus labore, iusto doloribus temporibus possimus quia, illo asperiores facere inventore nihil atque enim dolores esse sed in quaerat!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto repellat nesciunt quidem corporis temporibus obcaecati similique ullam quibusdam veniam, voluptate adipisci dignissimos ut. Earum minima doloribus reprehenderit illum? Ea, rem.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum unde recusandae nulla, veritatis voluptate numquam dolor eaque ipsum quis magnam id voluptatibus neque deserunt dicta, ad assumenda repudiandae explicabo dignissimos.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nam sunt voluptates corporis itaque optio nulla explicabo earum, nisi sapiente unde iure fuga adipisci labore nostrum excepturi saepe non. Quam?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi ullam repudiandae cumque nostrum consequatur minima molestias officiis atque alias aperiam praesentium numquam soluta, ipsum eum. Iusto non molestiae labore.</p>
+                </div>
+            </div>
+        </section>
+        <section class="checkboxes">
+            <div class="checkboxes__list">
+                <input class="checkboxes__input" type="checkbox" checked id="input-1">
+                <label class="checkboxes__label" for="input-1">1</label>
+                <input class="checkboxes__input" type="checkbox" id="input-2">
+                <label class="checkboxes__label" for="input-2">2</label>
+                <input class="checkboxes__input" type="checkbox" id="input-3">
+                <label class="checkboxes__label" for="input-3">3</label>
+                <input class="checkboxes__input" type="checkbox" id="input-4">
+                <label class="checkboxes__label" for="input-4">4</label>
+                <input class="checkboxes__input" type="checkbox" id="input-5">
+                <label class="checkboxes__label" for="input-5">5</label>
+                <input class="checkboxes__input" type="checkbox" id="input-6">
+                <label class="checkboxes__label" for="input-6">6</label>
+                <input class="checkboxes__input" type="checkbox" id="input-7">
+                <label class="checkboxes__label" for="input-7">7</label>
+                <input class="checkboxes__input" type="checkbox" id="input-8">
+                <label class="checkboxes__label" for="input-8">8</label>
+                <input class="checkboxes__input" type="checkbox" checked id="input-9">
+                <label class="checkboxes__label" for="input-9">9</label>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
